@@ -5,13 +5,14 @@ source("analysis.R")
 # **Mass Shooting Report for 2018**
 
 ## _Summary Information_
+[Source](https://www.gunviolencearchive.org/reports/mass-shooting?year=2018)
 
 During the year of 2018, there were many occurrences of mass shootings happening all around the US states. Approximately `r total_shootings` shootings occurred and many lives were either lost or injured. To be more exact, it was recorded that `r total_lives_lost` lives were lost and `r total_injured` were injured due to the mass shootings during 2018. The city that was most impacted by the shootings was `r city_impacted`. `r city_impacted` had been a victim of `r chicago_num` different shootings during 2018 and that is a real shame. However, state-wise there were two different states that had the same amount of shootings that occurred during 2018: `r state_most_impacted1` and `r state_most_impacted2`. They had a total of `r num_impacted` shootings within their states. Of the whole 2018, there were two dates that had the same amount of people who were either killed or injured during the shootings: `r most_shooting_day1` and `r most_shooting_day2`. On both these days, the total number of people who were either killed or injured totaled to `r most_shooting`. 
 
 ## _Summary Table_
 ```{r echo = FALSE}
 library(knitr)
-kable(summary_table, caption = "This table shows each state and their total amount of shootings that occurred within them. Plus, the total amount of people who were either killed or injured within their designated state during the year of 2018")
+kable(summary_table, caption = "This table shows each state and their total amount of shootings that occurred within them. Plus, it also shows the total amount of people who were either killed or injured within their designated state during the year of 2018. With this table, you are able to see by state the amount of shootings that occurred with the accompanying information like total people killed and total people injured. For instance, you can see that the states with the least amount of shootings are Delaware, Massachusetts, and Utah. You can also see that the states with the most amount of shootings is California and Illinois.")
 ```
 
 
@@ -26,7 +27,7 @@ This event corresponds with the information I shared above. Looking at the city 
 This map is to illustrate where all the shootings have occurred during the year of 2018. In this map, the blue circle represents the number of people who were injured in a shooting, and the red circle represents the number of people who were killed in a shooting. The darker the circles are, the more shootings there was in that general area. The size of the circle represents the amount of people who were either killed or injured. The bigger the circle, the more people killed or injured during the shooting. 
 
 This map is used to help show where majority of the shootings occurred in the United States. Additionally, my map helps show where the shooting with the most cause of death or injury occurs as well. For example, you can see that there is a huge blue circle in Philadelphia. This huge circle represents a shooting that caused 19 injuries towards people. This map helps distinguish which shooting caused the most death and most injuries between states.
-`r map_US`
+`r map_us`
 An interesting thing I noticed from my map is that majority of the shootings occurred in the eastern part of the United states. Splitting the US in half, you can see that a lot of states and cities on the right side of the map are being experiencing many shootouts compared to the left side.
 
 Another interesting thing I noticed from my map is that there are very few to no shootings occurring in the upper most part of the United States. You can see that there were no shootings in Montana, North Dakota, South Dakota, and Wyoming. I'm surprised that there weren't any shootings recorded, but again that's really good to hear.
