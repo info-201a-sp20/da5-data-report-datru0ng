@@ -141,4 +141,5 @@ most_state_shooting <- ggplot(data = number_states) +
   geom_col(mapping = aes(state, number_shooting_occurred,
     fill = number_shooting_occurred
   )) +
+  ggtitle("States and Their Total Amount of Shootings") +
   coord_flip()
